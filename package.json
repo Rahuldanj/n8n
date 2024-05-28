@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
-  "version": "0.1.0",
-  "description": "",
-  "keywords": [
-    "n8n-community-node-package"
-  ],
-  "license": "MIT",
-  "homepage": "",
-  "author": {
-    "name": "",
-    "email": ""
-  },
+  "name": "n8n-nodes-cmw",
+    "version": "0.1.0",
+    "description": "n8n node to call ConnectWise API.",
+    "keywords": [
+      "n8n-community-node-package"
+    ],
+    "license": "MIT",
+    "homepage": "https://n8n.io",
+    "author": {
+      "name": "Rahul",
+      "email": "vickizee1@gmail.com"
+    },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "git+https://github.com/Rahuldanj/n8n.git"
   },
   "main": "index.js",
   "scripts": {
@@ -30,12 +30,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/CWMApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/CWMProduct/product.node.js"
     ]
   },
   "devDependencies": {
